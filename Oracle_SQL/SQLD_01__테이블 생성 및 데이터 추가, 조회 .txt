@@ -1,0 +1,23 @@
+SQLD 실습_01_테이블 생성 및 데이터 추가, 조회 
+
+-- 테이블 만들기 
+
+CREATE TABLE TestUser (
+    id NUMBER PRIMARY KEY,
+    name VARCHAR2(50) NOT NULL,
+    age NUMBER
+);
+
+-- 데이터 추가하기 
+
+INSERT INTO TestUser (id, name, age)
+VALUES (1, 'drwill', 22);
+
+INSERT INTO TestUser (id, name, age)
+VALUES (2, 'zzuyi', 25);
+
+-- 데이터 조회하기 
+SELECT * FROM TestUser;
+
+
+SELECT NAME FROM TestUser;
